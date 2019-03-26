@@ -51,11 +51,12 @@ class playgames: UIViewController {
         else{
             history.text = history.text!+"\(get_ans!) is Wrong\n"
             life -= 1
-            if(life == -1){
+            if(life == 0){
+                lifepoint.text = " "
                 submit_button.isHidden = true
                 restart_button.isHidden = false
                 textfield.isUserInteractionEnabled = false
-                history.text = history.text!+"Try Again You Lose\n"
+                history.text = history.text!+"Try Again You Lose"
             }
             else{
             lifepoint.text = String(repeating: "❤️", count: life)
