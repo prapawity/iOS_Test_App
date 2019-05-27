@@ -10,6 +10,8 @@ import UIKit
 
 class TodoListTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var todoNameLabel2: UILabel!
+    
     @IBOutlet weak var todoNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +25,10 @@ class TodoListTableViewCell: UITableViewCell {
     }
 
     func loadData(names: String){
-        self.todoNameLabel.text = names
+        todoNameLabel.text = names
+    }
+    func loadData2(names: String){
+    print("jkdbngkjfnjngjkfgn     \(names)          kjlsgnmfklkgl;sdkg;kg;df")
+        todoNameLabel2.text = names
     }
 }
